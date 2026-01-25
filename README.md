@@ -91,6 +91,40 @@ Projeto criado para aprendizado, experimentação e evolução contínua.
 
 ---
 
+## 📜 Licença
+
+Este projeto está licenciado sob a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.
+
+✔ O código pode ser estudado, modificado e compartilhado  
+❌ Uso comercial **não é permitido**  
+
+Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas para fins educacionais e experimentais.
+
+- Fork o projeto
+- Crie sua branch
+- Faça commits claros
+- Abra um Pull Request
+
+---
+
+## 📎 Aviso
+
+Este projeto não é afiliado, associado ou endossado pela Mojang ou Microsoft.  
+Minecraft é uma marca registrada de seus respectivos donos.
+
+---
+
+## 👤 Autor
+
+Desenvolvido por **Carb0n**  
+Projeto criado para aprendizado, experimentação e evolução contínua.
+
 ---
 
 ## 🇺🇸 English
