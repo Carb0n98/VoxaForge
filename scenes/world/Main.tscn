@@ -1,0 +1,34 @@
+[gd_scene load_steps=9 format=3 uid="uid://cd1sb26iys08e"]
+
+[ext_resource type="Script" uid="uid://bdkrmfyye108n" path="res://scripts/world/World.gd" id="1_0nnu2"]
+[ext_resource type="PackedScene" uid="uid://bdqjl1vroxbu5" path="res://scenes/player/player.tscn" id="1_v6u7x"]
+[ext_resource type="Script" uid="uid://c60p3avgbi877" path="res://scripts/player/player.gd" id="2_431da"]
+[ext_resource type="PackedScene" uid="uid://c365hpcjfmyc5" path="res://scenes/world/chunk.tscn" id="3_0nnu2"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_431da"]
+
+[sub_resource type="Sky" id="Sky_6ryrm"]
+sky_material = SubResource("ProceduralSkyMaterial_431da")
+
+[sub_resource type="Environment" id="Environment_0nnu2"]
+background_mode = 2
+background_energy_multiplier = 2.29
+sky = SubResource("Sky_6ryrm")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6ryrm"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0nnu2")
+
+[node name="World" type="Node3D" parent="."]
+script = ExtResource("1_0nnu2")
+chunk_scene = ExtResource("3_0nnu2")
+
+[node name="Player" parent="." instance=ExtResource("1_v6u7x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6728444, 42.123566, 3.5947397)
+script = ExtResource("2_431da")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("CapsuleShape3D_6ryrm")
