@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cd1sb26iys08e"]
+[gd_scene format=3 uid="uid://cd1sb26iys08e"]
 
 [ext_resource type="Script" uid="uid://bdkrmfyye108n" path="res://scripts/world/World.gd" id="1_0nnu2"]
 [ext_resource type="PackedScene" uid="uid://bdqjl1vroxbu5" path="res://scenes/player/player.tscn" id="1_v6u7x"]
@@ -15,20 +15,22 @@ background_mode = 2
 background_energy_multiplier = 2.29
 sky = SubResource("Sky_6ryrm")
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6ryrm"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ryrm"]
+size = Vector3(0.6281128, 1.8862305, 0.45092773)
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=479282145]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1035866583]
 environment = SubResource("Environment_0nnu2")
 
-[node name="World" type="Node3D" parent="."]
+[node name="World" type="Node3D" parent="." unique_id=1163917600]
 script = ExtResource("1_0nnu2")
 chunk_scene = ExtResource("3_0nnu2")
 
-[node name="Player" parent="." instance=ExtResource("1_v6u7x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6728444, 42.123566, 3.5947397)
+[node name="Player" parent="." unique_id=1454974307 instance=ExtResource("1_v6u7x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 19.750017, 0)
 script = ExtResource("2_431da")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
-shape = SubResource("CapsuleShape3D_6ryrm")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1381889353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09005737, 1.0576121, 0.006225586)
+shape = SubResource("BoxShape3D_6ryrm")

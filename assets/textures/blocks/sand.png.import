@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwfjqihmlxqoq"
-path="res://.godot/imported/glass_side.png-f6b719b9c03a8f5227a394f29411871d.ctex"
+uid="uid://bnbu67jg1r6pb"
+path="res://.godot/imported/sand.png-573dc65784d012b57cda3dc3bac90666.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/blocks/glass_side.png"
-dest_files=["res://.godot/imported/glass_side.png-f6b719b9c03a8f5227a394f29411871d.ctex"]
+source_file="res://assets/textures/blocks/sand.png"
+dest_files=["res://.godot/imported/sand.png-573dc65784d012b57cda3dc3bac90666.ctex"]
 
 [params]
 
